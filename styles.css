@@ -34,17 +34,6 @@ p {
   font-size: xx-large;
 }
 
-p:after {
-  content: 'Data ID: ' attr(data-id);
-  top: 1px;
-  left: 1px;
-  background: black;
-  color: white;
-  padding: 1px;
-  opacity: 0;
-  transition: 0.5s opacity;
-}
-
 hr {
   height: 4px;
   width: 100%;
