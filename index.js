@@ -1,11 +1,10 @@
-let newDate = new Date(3020, 4, 6, 9, 3, 2, 34);
-console.log(newDate)
+let newDate = new Date();
 
-newDate.setDate(8);
-newDate.setMinutes(29);
-console.log(newDate);
-setInterval(updateTime, 1000);
+const currentDay = document.getElementById('dayOfWeek');
 
-function updateTime() {
-  Time.innerHTML = new Date();
-}
+currentDay.innerHTML = newDate.toDateString().substring(0, 3);
+
+const utcTime = document.getElementById('currentUTCTime');
+
+utcTime.innerHTML = new Date().getUTCMilliseconds();
+
